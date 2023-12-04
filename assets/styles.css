@@ -44,6 +44,7 @@ body {
 }
 
 .popupbook-content form {
+  /* Make the form width 100% of the popup container */
   max-width: 00px;
   margin: auto;
   color: white;
@@ -77,7 +78,7 @@ body {
 .popupbook-content form button:hover {
   background-color: #45a049;
 }
-
+/*Styling for text*/
 .bg-text {
   justify-content: flex-start;
   margin-left: 4rem;
