@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+  background-color: darkgray;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+#navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+}
+
+#navbar-logo {
+  cursor: pointer;
+}
+
+.navmenu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  list-style: none;
+  text-align: center;
+  width: 70%;
+  justify-self: end;
+  cursor: pointer;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+.nav-links:hover {
+  color: red;
+}
+
+.nav-links-button {
+  background-color: red;
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    grid-template-columns: 1fr; /* Display the logo and menu in a single column */
+    height: auto; /* Adjust the height based on your design preferences */
+  }
+
+  #navbar-logo {
+    justify-self: center; /* Center the logo */
+    margin: 10px 0; /* Adjust the margin based on your design preferences */
+  }
+
+  .navmenu {
+    grid-template-columns: 1fr; /* Display the menu items in a single column */
+    width: 100%; /* Take up the full width */
+    text-align: center; /* Center-align the menu items */
+  }
+
+  .nav-links {
+    display: block; /* Display each menu item as a block */
+    padding: 10px; /* Add padding to the menu items for better spacing */
+  }
+
+  .nav-links-button {
+    display: block; /* Display the button as a block */
+    margin: 10px auto; /* Center the button and add margin for spacing */
+  }
+}

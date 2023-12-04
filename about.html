@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar-logo">MMC</h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navmenu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="about.html" class="nav-links">About</a></li>
+          <li><a href="contactform.html" class="nav-links">Contact</a></li>
+          <li><a href="lessonsoffered.html" class="nav-links">Lessons</a></li>
+          <li>
+            <a href="#" class="nav-links nav-links-button" onclick="openPopup()"
+              >Book Online</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="popupbook-container" id="popupbooking">
+      <div class="popupbook-content">
+        <h2>Book Online</h2>
+        <form id="bookingForm" action="thankyou.html" method="post">
+          <!-- Add your form fields here -->
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="lessonType">Lesson Type:</label>
+          <select id="lessonType" name="lessonType" required>
+            <option value="guitar">Guitar</option>
+            <option value="piano">Piano</option>
+            <!-- Add more options as needed -->
+          </select>
+
+          <!-- Add more form fields as needed -->
+
+          <button type="submit">Submit</button>
+        </form>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <div class="about-main">
+      <div class="about-title">
+        <div class="about-slogan"><h1>About us</h1></div>
+      </div>
+      <div class="about-container">
+        <div class="about-img"></div>
+      </div>
+      <br />
+      <div class="about-text">
+        <p>
+          At [Your Music School Name], we believe in the transformative power of
+          music. Nestled in the heart of [Your Location], our school is a
+          vibrant community dedicated to nurturing the musical talents within
+          each student. we do. We strive to provide a dynamic learning
+          environment where creativity flourishes, skills are honed, and a
+          lifelong love for music is cultivated. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Dolorum consequatur, quos atque aut
+          voluptates iste magni ullam assumenda dolor, aperiam excepturi
+          doloremque! Iusto nam, rem optio neque necessitatibus reprehenderit
+          perferendis.
+        </p>
+        <br />
+        <br />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe maxime
+          incidunt magnam quia porro eaque aut. Fugiat aliquid iste nisi iusto
+          nemo, expedita tempora enim ratione voluptatem sunt sapiente
+          excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Vitae veniam et molestias perferendis voluptates vel saepe nam! Culpa,
+          aspernatur ipsa! Necessitatibus velit harum ratione provident aperiam
+          incidunt nemo at cupiditate. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dolorum magnam commodi perspiciatis temporibus
+          quidem obcaecati quam voluptate fugiat. Fugit consequatur odit
+          dolores. Tenetur dolorum deserunt blanditiis inventore est, doloremque
+          veniam.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <script>
+      scri;
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar-logo">MMC</h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navmenu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="about.html" class="nav-links">About</a></li>
+          <li><a href="contactform.html" class="nav-links">Contact</a></li>
+          <li><a href="lessonsoffered.html" class="nav-links">Lessons</a></li>
+          <li>
+            <a href="#" class="nav-links nav-links-button" onclick="openPopup()"
+              >Book Online</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="popupbook-container" id="popupbooking">
+      <div class="popupbook-content">
+        <h2>Book Online</h2>
+        <form id="bookingForm" action="thankyou.html" method="post">
+          <!-- Add your form fields here -->
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="lessonType">Lesson Type:</label>
+          <select id="lessonType" name="lessonType" required>
+            <option value="guitar">Guitar</option>
+            <option value="piano">Piano</option>
+            <!-- Add more options as needed -->
+          </select>
+
+          <!-- Add more form fields as needed -->
+
+          <button type="submit">Submit</button>
+        </form>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <div class="thank-you">
+      <h1>Thank You for your interest!</h1>
+      <br />
+      <h4>We have received your booking form and will enquire you shortly!</h4>
+    </div>
+  </body>
+</html>

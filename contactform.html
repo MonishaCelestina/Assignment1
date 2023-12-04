@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactform.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar-logo">MMC</h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navmenu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="about.html" class="nav-links">About</a></li>
+          <li><a href="contactform.html" class="nav-links">Contact</a></li>
+          <li><a href="lessonsoffered.html" class="nav-links">Lessons</a></li>
+          <li>
+            <a href="#" class="nav-links nav-links-button" onclick="openPopup()"
+              >Book Online</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="popupbook-container" id="popupbooking">
+      <div class="popupbook-content">
+        <h2>Book Online</h2>
+        <form id="bookingForm">
+          <!-- Add your form fields here -->
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="lessonType">Lesson Type:</label>
+          <select id="lessonType" name="lessonType" required>
+            <option value="guitar">Guitar</option>
+            <option value="piano">Piano</option>
+            <!-- Add more options as needed -->
+          </select>
+
+          <!-- Add more form fields as needed -->
+
+          <button type="submit">Submit</button>
+        </form>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <h2>Contact Us</h2>
+          <input type="text" class="field" placeholder="Your Name" />
+          <input type="text" class="field" placeholder="Your Email" />
+          <input type="text" class="field" placeholder="Phone" />
+          <textarea placeholder="Message" class="field"></textarea>
+          <button class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

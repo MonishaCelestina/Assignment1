@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar-logo">MMC</h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navmenu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="about.html" class="nav-links">About</a></li>
+          <li><a href="contactform.html" class="nav-links">Contact</a></li>
+          <li><a href="lessonsoffered.html" class="nav-links">Lessons</a></li>
+          <li>
+            <a href="#" class="nav-links nav-links-button" onclick="openPopup()"
+              >Book Online</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="popupbook-container" id="popupbooking">
+      <div class="popupbook-content">
+        <h2>Book Online</h2>
+        <form id="bookingForm" action="thankyou.html" method="POST">
+          <!-- Add your form fields here -->
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+      
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+      
+          <label for="lessonType">Lesson Type:</label>
+          <select id="lessonType" name="lessonType" required>
+              <option value="guitar">Guitar</option>
+              <option value="piano">Piano</option>
+              <!-- Add more options as needed -->
+          </select>
+      
+          <!-- Add more form fields as needed -->
+      
+          <button type="submit">Submit</button>
+      </form>      
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <div class="courses">
+    </div>
+    <section id="course">
+      <h3>Lessons Offered</h3>
+      <div class="course-container">
+        <!--**box1*******************-->
+        <div class="course-box">
+          <!--img-->
+          <div class="course-img">
+            <img
+              src="images/one-man-playing-guitar-stage-night-generated-by-ai_188544-21510.jpg"
+              alt="guyplayingguitar"
+            />
+          </div>
+          <!--text-->
+          <div class="course-text">
+            <!--category-->
+            <span class="category">Guitar</span>
+            <!--title-->
+            <h4>Strum, Jam, Repeat: Unleash Your Sound</h4>
+            <!--small-paragraph-->
+            <p>
+              Guitar lessons are your backstage pass to a world of musical fun
+              and self-discovery! Forget dull lectures—imagine interactive jam
+              sessions where you unlock the secrets of chords and unleash your
+              musical superpowers. It's not just learning; it's a rock 'n' roll
+              adventure with a cool guide (your awesome guitar teacher) and
+              fellow music enthusiasts. From killer riffs to creating your sonic
+              masterpiece, these lessons turn practicing into a party. Why
+              settle for air guitar when you can rock out for real? Join the
+              fun—your guitar is ready to be your musical sidekick!
+            </p>
+            <button>
+              <label for="popup" style="color: black;">Learn more</label>
+            </button>
+            <div class="lesson-time">
+              <span class="lesson"
+                ><i class="fa-solid fa-layer-group"></i> Weekly Lessons</span
+              >
+              <span class="time"
+                ><i class="fa-solid fa-clock"></i> 1 hr 30 min</span
+              >
+            </div>
+          </div>
+          <input type="checkbox" class="popup-btn" id="popup" />
+          <!--popup-->
+          <div class="popup-bg"></div>
+          <div class="course-popup">
+            <!--close-->
+            <label for="popup" class="p-close"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+            <div class="popup-content">
+              <!--demo-video-->
+              <span>Course Demo</span>
+              <video controls id="videoPlayer">
+                <source
+                  src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <strong>Guitar lessons</strong>
+              <p>
+                Considering the pursuit of guitar lessons? Opting for formal
+                instruction offers a structured and effective approach to
+                mastering this versatile instrument. In contrast to navigating
+                the vast array of online tutorials independently, professional
+                lessons provide a systematic curriculum. This structured
+                approach ensures comprehensive learning, covering everything
+                from fundamental chords to advanced techniques. Additionally,
+                personalized feedback from an experienced instructor can
+                significantly enhance your playing skills and overall
+                proficiency. Enrolling in guitar lessons represents a dedicated
+                commitment to musical growth and a reliable pathway to achieving
+                your guitar-playing aspirations.
+              </p>
+              <a href="#">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!--**box2*******************-->
+        <div class="course-box">
+          <!--img-->
+          <div class="course-img">
+            <img src="images/people-2577951_1280.jpg" />
+          </div>
+          <!--text-->
+          <div class="course-text">
+            <!--category-->
+            <span class="category">Piano</span>
+            <!--title-->
+            <h4>Strum, Jam, Repeat: Unleash Your Sound</h4>
+            <!--small-paragraph-->
+            <p>
+              Dive into piano lessons for a blend of fun and finesse! It's not
+              just about hitting the right keys; it's about unlocking a musical
+              playground where each note becomes a stepping stone to your own
+              symphony. Picture yourself turning scales into musical adventures
+              and impressing friends with spontaneous piano magic. From classics
+              to contemporary tunes, piano lessons are your passport to a world
+              where playing isn't a task but a joyous journey. So, why just
+              admire the piano when you can make it dance to your tune? Join the
+              piano party—your fingers are itching to create a melody!
+            </p>
+            <button>
+              <label for="popup2"style="color: black;">Learn more</label>
+            </button>
+            <!--lessons-&-time-->
+            <div class="lesson-time">
+              <span class="lesson"
+                ><i class="fa-solid fa-layer-group"></i> Weeky Lessons</span
+              >
+              <span class="time"
+                ><i class="fa-solid fa-clock"></i> 45minutes to 1 hour and 30
+                minutes</span
+              >
+            </div>
+          </div>
+          <input type="checkbox" class="popup-btn" id="popup2" />
+          <!--popup-->
+          <div class="popup-bg"></div>
+          <div class="course-popup">
+            <!--close-->
+            <label for="popup2" class="p-close"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+            <div class="popup-content">
+              <!--demo-video-->
+              <span>Course Demo</span>
+              <video controls>
+                <source
+                  src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <strong>Complete Content Writing Course</strong>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                voluptatem, facilis neque unde voluptates magni impedit eos
+                molestiae dicta consectetur nisi, eaque et ipsum quasi
+                architecto quaerat odit necessitatibus facere!
+              </p>
+
+              <a href="#">Encroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!--**box3*******************-->
+        <div class="course-box">
+          <!--img-->
+          <div class="course-img">
+            <img src="images/record-e-drums-960x600-1.jpg" alt="" />
+          </div>
+          <!--text-->
+          <div class="course-text">
+            <!--category-->
+            <span class="category">Drums</span>
+            <!--title-->
+            <label for="popup3">Master the art of rhythm and percussion with engaging and personalized drum lessons</label
+            >
+            <!--small-paragraph-->
+            <p>
+              Drum lessons: where beats meet fun! Unleash your inner rhythm
+              maestro, turn drumsticks into magic wands, and create percussive
+              masterpieces. It's not just about keeping time; it's about setting
+              your musical pace. Be the heartbeat of a band or steal the show
+              with a drum solo. Ready to march to the beat of your drumming
+              dreams?
+            </p>
+            <button>
+              <label for="popup3" style="color: black;">Learn more</label>
+            </button>
+            <!--lessons-&-time-->
+            <div class="lesson-time">
+              <span class="lesson"
+                ><i class="fa-solid fa-layer-group"></i> 9 Lessons</span
+              >
+              <span class="time"
+                ><i class="fa-solid fa-clock"></i> 3 hr 10 min</span
+              >
+            </div>
+          </div>
+          <input type="checkbox" class="popup-btn" id="popup3" />
+          <!--popup-->
+          <div class="popup-bg"></div>
+          <div class="course-popup">
+            <!--close-->
+            <label for="popup3" class="p-close"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+            <div class="popup-content">
+              <!--demo-video-->
+              <span>Course Demo</span>
+              <video controls>
+                <source
+                  src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <strong>Complete Graphic Designer Course</strong>
+              <p>
+               <p>
+                Explore your vocal prowess, transform melodies with your unique style, and create captivating performances. It's not just about hitting the right notes; it's about setting the stage ablaze with your sound. Be the vocal centerpiece of a group or shine solo with a captivating performance. Ready to step into the spotlight and follow the rhythm of your singing dreams?
+              </p>
+              <a href="#">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="course-box">
+            <!--img-->
+            <div class="course-img">
+              <img src="images/hqdefault.jpg" alt="" />
+            </div>
+            <!--text-->
+            <div class="course-text">
+              <!--category-->
+              <span class="category">Vocal Lessons</span>
+              <!--title-->
+              <label for="popup4"
+                >Sing, Harmonize, Repeat: Unleash Your Voice</label
+              >
+              <!--small-paragraph-->
+              <p>
+                Dive into the world of violin, where strings become your artistic brush, creating enchanting musical tapestries. It's not just about playing the notes; it's about weaving a captivating symphony. Be the soulful melody in an ensemble or take center stage with a violin solo. Ready to step into the spotlight and follow the rhythm of your violin dreams?
+              </p>
+              <button>
+                <label for="popup3" style="color: black;">Learn more</label>
+              </button>
+              <!--lessons-&-time-->
+              <div class="lesson-time">
+                <span class="lesson"
+                  ><i class="fa-solid fa-layer-group"></i> 9 Lessons</span
+                >
+                <span class="time"
+                  ><i class="fa-solid fa-clock"></i> 3 hr 10 min</span
+                >
+              </div>
+            </div>
+            <input type="checkbox" class="popup-btn" id="popup3" />
+            <!--popup-->
+            <div class="popup-bg"></div>
+            <div class="course-popup">
+              <!--close-->
+              <label for="popup3" class="p-close"
+                ><i class="fa-solid fa-xmark"></i
+              ></label>
+              <div class="popup-content">
+                <!--demo-video-->
+                <span>Course Demo</span>
+                <video controls>
+                  <source
+                    src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <strong>Vocal Lessons</strong>
+                <p>
+                  Dive into the world of violin, where strings become your artistic brush, creating enchanting musical tapestries. It's not just about playing the notes; it's about weaving a captivating symphony. Be the soulful melody in an ensemble or take center stage with a violin solo. Ready to step into the spotlight and follow the rhythm of your violin dreams?
+                </p>
+                <a href="#">Enroll Now</a>
+              </div>
+            </div>
+        </div>
+          <div class="course-box">
+              <!--img-->
+              <div class="course-img">
+                <img src="images/violinplayer.jpg" alt="" />
+              </div>
+              <!--text-->
+              <div class="course-text">
+                <!--category-->
+                <span class="category">Violin Lessons</span>
+                <!--title-->
+                <label for="popup4"
+                  >Bow, Melody, Encore: Unleash Your Harmony</label
+                >
+                <!--small-paragraph-->
+                <p>
+                  where strings weave melodies of joy! Discover the enchanting world of violin, transform your bow into a wand, and craft beautiful musical tales. It's not just about playing notes; it's about creating your harmonious rhythm. Whether you want to lead a symphony or captivate
+                   with a solo, let the violin be your guide. Ready to dance to the tunes of your violin dreams?
+                </p>
+                <button>
+                  <label for="popup3" style="color: black;" >Learn more</label>
+                </button>
+                <!--lessons-&-time-->
+                <div class="lesson-time">
+                  <span class="lesson"
+                    ><i class="fa-solid fa-layer-group"></i> 9 Lessons</span
+                  >
+                  <span class="time"
+                    ><i class="fa-solid fa-clock"></i> 3 hr 10 min</span
+                  >
+                </div>
+              </div>
+              <input type="checkbox" class="popup-btn" id="popup3" />
+              <!--popup-->
+              <div class="popup-bg"></div>
+              <div class="course-popup">
+                <!--close-->
+                <label for="popup3" class="p-close"
+                  ><i class="fa-solid fa-xmark"></i
+                ></label>
+                <div class="popup-content">
+                  <!--demo-video-->
+                  <span>Course Demo</span>
+                  <video controls>
+                    <source
+                      src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <strong>Violin Lessons</strong>
+                  <p>
+                    where strings weave melodies of joy! Discover the enchanting world of violin, transform your bow into a wand, and craft beautiful musical tales. It's not just about playing notes; it's about creating your harmonious rhythm. Whether you want to lead a symphony or captivate
+                   with a solo, let the violin be your guide. Ready to dance to the tunes of your violin dreams?
+                  </p>
+
+                  <button onclick="openPopup()">
+                    <a href="#">Enroll Now</a>
+                  </button>
+                  
+              </div>
+          </div>
+
+    </section>
+  </body>
+</html>
