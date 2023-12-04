@@ -12,7 +12,14 @@
   <body>
     <div class="nav-container">
       <nav class="navbar">
-        <h1 id="navbar-logo">MMC</h1>
+        <a href="index.html">
+          <img
+            id="navbar-logo"
+            src="images/mmswhite.png"
+            alt="MMC Logo"
+            style="width: 120px"
+          />
+        </a>
         <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -49,6 +56,9 @@
           <select id="lessonType" name="lessonType" required>
             <option value="guitar">Guitar</option>
             <option value="piano">Piano</option>
+            <option value="piano">Drums</option>
+            <option value="piano">Vocal</option>
+            <option value="piano">Violin</option>
             <!-- Add more options as needed -->
           </select>
 
@@ -59,10 +69,7 @@
         <button onclick="closePopup()">Close</button>
       </div>
     </div>
-    <div
-      class="feedback-heading"
-      style="background-image: url(images/pianoweb.jpg)"
-    >
+    <div class="feedback-heading">
       <h1>Testimonials</h1>
     </div>
     <div id="testimonialsection" class="testimonial-section">
@@ -84,5 +91,52 @@
         <p class="testimonial-details">- Jane Smith, Parent</p>
       </div>
     </div>
+    <footer>
+      <div class="footer-container">
+        <!--heading----------------->
+        <div class="footer-heading">
+          <h4>Striking the Right Chord in Music Education.</h4>
+        </div>
+        <!--footer-content----------------------------->
+        <div class="footer-content">
+          <!--box------------->
+          <div class="footer-box">
+            <strong>explore</strong>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactform.html">Contact</a></li>
+            </ul>
+          </div>
+          <!--box------------->
+          <div class="footer-box">
+            <strong>Social</strong>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/aureusacademy/?hl=en"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/academymusic?lang=en">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/rockschoolsingapore/"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--box------------->
+          <div class="footer-box">
+            <strong>Contact</strong>
+            <ul>
+              <li><a href="contactform.html">monimusicschool@gmail.com</a></li>
+              <li><a href="#">+123456789</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

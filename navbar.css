@@ -61,6 +61,7 @@
   #navbar-logo {
     justify-self: center; /* Center the logo */
     margin: 10px 0; /* Adjust the margin based on your design preferences */
+    margin-left: 160px;
   }
 
   .navmenu {

@@ -10,7 +10,15 @@
   <body>
     <div class="nav-container">
       <nav class="navbar">
-        <h1 id="navbar-logo">MMC</h1>
+        <a href="index.html">
+          <img
+            id="navbar-logo"
+            src="images/mmswhite.png"
+            alt="MMC Logo"
+            style="width: 120px"
+          />
+        </a>
+
         <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -48,6 +56,9 @@
           <select id="lessonType" name="lessonType" required>
             <option value="guitar">Guitar</option>
             <option value="piano">Piano</option>
+            <option value="drums">Drums</option>
+            <option value="vocal">Vocal</option>
+            <option value="violin">Violin</option>
             <!-- Add more options as needed -->
           </select>
 
@@ -63,13 +74,107 @@
         <div class="left"></div>
         <div class="right">
           <h2>Contact Us</h2>
-          <input type="text" class="field" placeholder="Your Name" />
-          <input type="text" class="field" placeholder="Your Email" />
-          <input type="text" class="field" placeholder="Phone" />
-          <textarea placeholder="Message" class="field"></textarea>
-          <button class="btn">Send</button>
+          <form
+            action="thank-you-interest.html"
+            method="POST"
+            onsubmit="return validateContactForm()"
+          >
+            <input
+              type="text"
+              class="field"
+              placeholder="Your Name"
+              id="contactName"
+            />
+            <input
+              type="text"
+              class="field"
+              placeholder="Your Email"
+              id="contactEmail"
+            />
+            <input
+              type="text"
+              class="field"
+              placeholder="Phone"
+              id="contactPhone"
+            />
+            <textarea
+              placeholder="Message"
+              class="field"
+              id="contactMessage"
+            ></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-container">
+        <!--heading----------------->
+        <div class="footer-heading">
+          <h4>Striking the Right Chord in Music Education.</h4>
+        </div>
+        <!--footer-content----------------------------->
+        <div class="footer-content">
+          <!--box------------->
+          <div class="footer-box">
+            <strong>explore</strong>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactform.html">Contact</a></li>
+            </ul>
+          </div>
+          <!--box------------->
+          <div class="footer-box">
+            <strong>Social</strong>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/aureusacademy/?hl=en"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/academymusic?lang=en">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/rockschoolsingapore/"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--box------------->
+          <div class="footer-box">
+            <strong>Contact</strong>
+            <ul>
+              <li><a href="contactform.html">monimusicschool@gmail.com</a></li>
+              <li><a href="#">+123456789</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function validateContactForm() {
+        // Check if the required fields in the contact form are not empty
+        var contactName = document.getElementById("contactName").value;
+        var contactEmail = document.getElementById("contactEmail").value;
+        var contactPhone = document.getElementById("contactPhone").value;
+        var contactMessage = document.getElementById("contactMessage").value;
+
+        if (
+          contactName === "" ||
+          contactEmail === "" ||
+          contactPhone === "" ||
+          contactMessage === ""
+        ) {
+          alert("Please fill in all required fields in the contact form.");
+          return false; // Prevent form submission
+        }
+
+        // Continue with form submission if all fields are filled
+        return true;
+      }
+    </script>
   </body>
 </html>

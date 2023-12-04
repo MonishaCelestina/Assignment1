@@ -19,7 +19,15 @@
   <body>
     <div class="nav-container">
       <nav class="navbar">
-        <h1 id="navbar-logo">MMC</h1>
+        <a href="index.html">
+          <img
+            id="navbar-logo"
+            src="images/mmswhite.png"
+            alt="MMC Logo"
+            style="width: 120px"
+          />
+        </a>
+
         <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -56,6 +64,9 @@
           <select id="lessonType" name="lessonType" required>
             <option value="guitar">Guitar</option>
             <option value="piano">Piano</option>
+            <option value="piano">Drums</option>
+            <option value="piano">Vocal</option>
+            <option value="piano">Violin</option>
             <!-- Add more options as needed -->
           </select>
 
@@ -99,105 +110,81 @@
           ignite your creativity. Allow the enchanting power of music to lead
           you towards self-expression and personal growth.
         </p>
-        <button>Browse lessons</button>
+        <a href="lessonsoffered.html">
+          <button>Browse Lessons</button>
+        </a>
       </div>
     </div>
     <br />
     <div class="lessonsoffered"><h2>Lessons Offered</h2></div>
     <div class="lessonsofferedcontainer">
-      <!--slider------------------->
       <ul id="autoWidth" class="cs-hidden">
-        <!--1------------------------------>
         <li class="item-a">
-          <!--slider-box-->
           <div class="box">
-            <!--model-->
             <img src="images/guit.png" class="model" />
-            <!--details-->
             <div class="details">
-              <!--character-details-->
               <h2>Guitar</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                modi velit in, tenetur qui deleniti alias! Corrupti aliquid a ex
-                quibusdam, ipsa, qui, labore odit impedit illo voluptas rem
-                natus!
+                Unleash your musical potential with interactive guitar lessons.
+                From essential chords to advanced techniques, embark on a rock
+                'n' roll adventure guided by experienced instructors.
               </p>
             </div>
           </div>
         </li>
-        <!--2------------------------------>
         <li class="item-a">
-          <!--slider-box-->
           <div class="box">
-            <!--model-->
             <img src="images/pino.png" class="model" />
-            <!--details-->
             <div class="details">
               <h2>Piano</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                enim deserunt vero quisquam ratione, quo nihil, fuga esse quod
-                dolores ad animi est fugiat quasi error ipsa non porro. Quod?
+                Dive into the joyous world of piano playing. Transform scales
+                into musical adventures and impress with spontaneous piano
+                magic. Whether you're a beginner or advanced, join the piano
+                party and let your fingers create a melody.
               </p>
             </div>
           </div>
         </li>
-        <!--3------------------------------>
         <li class="item-a">
-          <!--slider-box-->
           <div class="box">
-            <!--model-->
             <img src="images/drums.png" class="model" />
-            <!--details-->
             <div class="details">
-              <!--logo-character-->
-              <!--character-details-->
               <h2>Drums</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate hic, molestiae esse a consectetur corrupti
-                aspernatur! Eveniet nobis ad porro nam fuga iste beatae
-                expedita! Eius illo nobis autem molestiae.
+                Where beats meet fun! Unleash your inner rhythm maestro, turn
+                drumsticks into magic wands, and create percussive masterpieces.
+                Be the heartbeat of a band or steal the show with a drum solo.
+                March to the beat of your drumming dreams.
               </p>
             </div>
           </div>
         </li>
-        <!--4------------------------------>
         <li class="item-a">
-          <!--slider-box-->
           <div class="box">
-            <!--model-->
             <img src="images/voc.png" class="model" />
-            <!--details-->
             <div class="details">
-              <!--character-details-->
               <h2>Vocal</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ratione nihil quaerat, alias ex quibusdam quod minus repudiandae
-                velit veritatis ipsum sapiente, vero necessitatibus
-                reprehenderit corrupti molestias perspiciatis harum enim
-                numquam!
+                Explore your vocal prowess, transform melodies with your unique
+                style, and create captivating performances. From hitting the
+                right notes to setting the stage ablaze, step into the spotlight
+                and follow the rhythm of your singing dreams.
               </p>
             </div>
           </div>
         </li>
-        <!--5------------------------------>
-
         <li class="item-a">
-          <!--slider-box-->
           <div class="box">
-            <!--model-->
             <img src="images/violin.png" class="model" />
-            <!--details-->
             <div class="details">
               <h2>Violin</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                officiis quasi explicabo quisquam fuga facere aperiam aspernatur
-                blanditiis iure obcaecati illo doloremque, quia facilis
-                consectetur! Velit assumenda fuga exercitationem totam.
+                Discover the enchanting world of violin, where strings weave
+                melodies of joy. Whether leading a symphony or captivating with
+                a solo, let the violin be your guide. Dance to the tunes of your
+                violin dreams and embrace the elegance of this timeless
+                instrument.
               </p>
             </div>
           </div>
@@ -267,7 +254,6 @@
     <br />
     <!-- Slideshow container -->
     <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <img src="images/boyguitar.jpg" style="width: 100%" />
@@ -319,25 +305,35 @@
           <div class="footer-box">
             <strong>explore</strong>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactform.html">Contact</a></li>
             </ul>
           </div>
           <!--box------------->
           <div class="footer-box">
             <strong>Social</strong>
             <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li>
+                <a href="https://www.instagram.com/aureusacademy/?hl=en"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/academymusic?lang=en">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/rockschoolsingapore/"
+                  >Facebook</a
+                >
+              </li>
             </ul>
           </div>
           <!--box------------->
           <div class="footer-box">
             <strong>Contact</strong>
             <ul>
-              <li><a href="#">monimusicschool@gmail.com</a></li>
+              <li><a href="contactform.html">monimusicschool@gmail.com</a></li>
               <li><a href="#">+123456789</a></li>
             </ul>
           </div>

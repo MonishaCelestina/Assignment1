@@ -11,7 +11,15 @@
   <body>
     <div class="nav-container">
       <nav class="navbar">
-        <h1 id="navbar-logo">MMC</h1>
+        <a href="index.html">
+          <img
+            id="navbar-logo"
+            src="images/mmswhite.png"
+            alt="MMC Logo"
+            style="width: 120px"
+          />
+        </a>
+        
         <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -49,6 +57,9 @@
           <select id="lessonType" name="lessonType" required>
               <option value="guitar">Guitar</option>
               <option value="piano">Piano</option>
+              <option value="piano">Drums</option>
+              <option value="piano">Vocal</option>
+              <option value="piano">Violin</option>
               <!-- Add more options as needed -->
           </select>
       
@@ -116,7 +127,7 @@
               <span>Course Demo</span>
               <video controls id="videoPlayer">
                 <source
-                  src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                  src="images/Guitar Lesson 1 - Absolute Beginner_ Start Here! [Free 10 Day Starter Course].mp4"
                   type="video/mp4"
                 />
               </video>
@@ -135,7 +146,7 @@
                 commitment to musical growth and a reliable pathway to achieving
                 your guitar-playing aspirations.
               </p>
-              <a href="#">Enroll Now</a>
+              <a href="#"><button style="background-color: red;" onclick="openPopup()">Enroll Now</button></a>
             </div>
           </div>
         </div>
@@ -191,19 +202,25 @@
               <span>Course Demo</span>
               <video controls>
                 <source
-                  src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                  src="images/Piano Lessons for Beginners_ Part 1 - Getting Started! Learn some simple chords.mp4"
                   type="video/mp4"
                 />
               </video>
-              <strong>Complete Content Writing Course</strong>
+              <strong>Piano Lessons</strong>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                voluptatem, facilis neque unde voluptates magni impedit eos
-                molestiae dicta consectetur nisi, eaque et ipsum quasi
-                architecto quaerat odit necessitatibus facere!
+                Dive into piano lessons for a blend of fun and finesse! It's not
+              just about hitting the right keys; it's about unlocking a musical
+              playground where each note becomes a stepping stone to your own
+              symphony. Picture yourself turning scales into musical adventures
+              and impressing friends with spontaneous piano magic. From classics
+              to contemporary tunes, piano lessons are your passport to a world
+              where playing isn't a task but a joyous journey. So, why just
+              admire the piano when you can make it dance to your tune? Join the
+              piano party—your fingers are itching to create a melody!
+            </p>
               </p>
 
-              <a href="#">Encroll Now</a>
+              <a href="#"><button style="background-color: red;" onclick="openPopup()">Enroll Now</button></a>
             </div>
           </div>
         </div>
@@ -219,8 +236,7 @@
             <!--category-->
             <span class="category">Drums</span>
             <!--title-->
-            <label for="popup3">Master the art of rhythm and percussion with engaging and personalized drum lessons</label
-            >
+            <h4>Master the art of rhythm and percussion with engaging and personalized drum lessons</h4>
             <!--small-paragraph-->
             <p>
               Drum lessons: where beats meet fun! Unleash your inner rhythm
@@ -256,135 +272,217 @@
               <span>Course Demo</span>
               <video controls>
                 <source
-                  src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
+                  src="images/How To Play Drums - Your Very First Drum Lesson.mp4"
                   type="video/mp4"
                 />
               </video>
-              <strong>Complete Graphic Designer Course</strong>
+              <strong>Drum lessons</strong>
               <p>
-               <p>
-                Explore your vocal prowess, transform melodies with your unique style, and create captivating performances. It's not just about hitting the right notes; it's about setting the stage ablaze with your sound. Be the vocal centerpiece of a group or shine solo with a captivating performance. Ready to step into the spotlight and follow the rhythm of your singing dreams?
+                Considering the pursuit of drum lessons? Opting for formal
+                instruction offers a structured and effective approach to
+                mastering this dynamic instrument. In contrast to navigating
+                the vast array of online tutorials independently, professional
+                lessons provide a systematic curriculum. This structured
+                approach ensures comprehensive learning, covering everything
+                from basic beats to complex rhythms. Additionally, personalized
+                feedback from an experienced instructor can significantly
+                enhance your drumming skills and overall proficiency. Enrolling
+                in drum lessons represents a dedicated commitment to musical
+                growth and a reliable pathway to achieving your drumming
+                aspirations.
               </p>
-              <a href="#">Enroll Now</a>
+              <a href="#"><button style="background-color: red;" onclick="openPopup()">Enroll Now</button></a>
             </div>
           </div>
         </div>
-        <div class="course-box">
-            <!--img-->
-            <div class="course-img">
-              <img src="images/hqdefault.jpg" alt="" />
-            </div>
-            <!--text-->
-            <div class="course-text">
-              <!--category-->
-              <span class="category">Vocal Lessons</span>
-              <!--title-->
-              <label for="popup4"
-                >Sing, Harmonize, Repeat: Unleash Your Voice</label
-              >
-              <!--small-paragraph-->
-              <p>
-                Dive into the world of violin, where strings become your artistic brush, creating enchanting musical tapestries. It's not just about playing the notes; it's about weaving a captivating symphony. Be the soulful melody in an ensemble or take center stage with a violin solo. Ready to step into the spotlight and follow the rhythm of your violin dreams?
-              </p>
-              <button>
-                <label for="popup3" style="color: black;">Learn more</label>
-              </button>
-              <!--lessons-&-time-->
-              <div class="lesson-time">
-                <span class="lesson"
-                  ><i class="fa-solid fa-layer-group"></i> 9 Lessons</span
-                >
-                <span class="time"
-                  ><i class="fa-solid fa-clock"></i> 3 hr 10 min</span
-                >
-              </div>
-            </div>
-            <input type="checkbox" class="popup-btn" id="popup3" />
-            <!--popup-->
-            <div class="popup-bg"></div>
-            <div class="course-popup">
-              <!--close-->
-              <label for="popup3" class="p-close"
-                ><i class="fa-solid fa-xmark"></i
-              ></label>
-              <div class="popup-content">
-                <!--demo-video-->
-                <span>Course Demo</span>
-                <video controls>
-                  <source
-                    src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-                <strong>Vocal Lessons</strong>
-                <p>
-                  Dive into the world of violin, where strings become your artistic brush, creating enchanting musical tapestries. It's not just about playing the notes; it's about weaving a captivating symphony. Be the soulful melody in an ensemble or take center stage with a violin solo. Ready to step into the spotlight and follow the rhythm of your violin dreams?
-                </p>
-                <a href="#">Enroll Now</a>
-              </div>
-            </div>
-        </div>
-          <div class="course-box">
-              <!--img-->
-              <div class="course-img">
-                <img src="images/violinplayer.jpg" alt="" />
-              </div>
-              <!--text-->
-              <div class="course-text">
-                <!--category-->
-                <span class="category">Violin Lessons</span>
-                <!--title-->
-                <label for="popup4"
-                  >Bow, Melody, Encore: Unleash Your Harmony</label
-                >
-                <!--small-paragraph-->
-                <p>
-                  where strings weave melodies of joy! Discover the enchanting world of violin, transform your bow into a wand, and craft beautiful musical tales. It's not just about playing notes; it's about creating your harmonious rhythm. Whether you want to lead a symphony or captivate
-                   with a solo, let the violin be your guide. Ready to dance to the tunes of your violin dreams?
-                </p>
-                <button>
-                  <label for="popup3" style="color: black;" >Learn more</label>
-                </button>
-                <!--lessons-&-time-->
-                <div class="lesson-time">
-                  <span class="lesson"
-                    ><i class="fa-solid fa-layer-group"></i> 9 Lessons</span
-                  >
-                  <span class="time"
-                    ><i class="fa-solid fa-clock"></i> 3 hr 10 min</span
-                  >
-                </div>
-              </div>
-              <input type="checkbox" class="popup-btn" id="popup3" />
-              <!--popup-->
-              <div class="popup-bg"></div>
-              <div class="course-popup">
-                <!--close-->
-                <label for="popup3" class="p-close"
-                  ><i class="fa-solid fa-xmark"></i
-                ></label>
-                <div class="popup-content">
-                  <!--demo-video-->
-                  <span>Course Demo</span>
-                  <video controls>
-                    <source
-                      src="videos/Build A Product Page Using HTML CSS And JavaScript.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                  <strong>Violin Lessons</strong>
-                  <p>
-                    where strings weave melodies of joy! Discover the enchanting world of violin, transform your bow into a wand, and craft beautiful musical tales. It's not just about playing notes; it's about creating your harmonious rhythm. Whether you want to lead a symphony or captivate
-                   with a solo, let the violin be your guide. Ready to dance to the tunes of your violin dreams?
-                  </p>
 
-                  <button onclick="openPopup()">
-                    <a href="#">Enroll Now</a>
-                  </button>
-                  
-              </div>
+        <!--**box4*******************-->
+        <div class="course-box">
+          <!--img-->
+          <div class="course-img">
+            <img src="images/hqdefault.jpg" alt="singer" />
           </div>
+          <!--text-->
+          <div class="course-text">
+            <!--category-->
+            <span class="category">Vocal</span>
+            <!--title-->
+            <h4>Discover the power of your voice with expert vocal lessons</h4>
+            <!--small-paragraph-->
+            <p>
+              Vocal lessons: where melodies and techniques harmonize to shape
+              your unique voice. Whether you're a shower singer or aiming for
+              the stage, these lessons are your gateway to vocal mastery. From
+              scales to soaring high notes, your vocal journey begins here.
+              Unleash the full potential of your voice with personalized
+              guidance and techniques. Let the world hear the music in you!
+            </p>
+            <button>
+              <label for="popup4" style="color: black;">Learn more</label>
+            </button>
+            <!--lessons-&-time-->
+            <div class="lesson-time">
+              <span class="lesson"
+                ><i class="fa-solid fa-layer-group"></i> 12 Lessons</span
+              >
+              <span class="time"
+                ><i class="fa-solid fa-clock"></i> 1 hr 45 min</span
+              >
+            </div>
+          </div>
+          <input type="checkbox" class="popup-btn" id="popup4" />
+          <!--popup-->
+          <div class="popup-bg"></div>
+          <div class="course-popup">
+            <!--close-->
+            <label for="popup4" class="p-close"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+            <div class="popup-content">
+              <!--demo-video-->
+              <span>Course Demo</span>
+              <video controls>
+                <source
+                  src="images/Your FIRST Singing Lesson (Beginner Lesson from a REAL Vocal Coach).mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <strong>Vocal lessons</strong>
+              <p>
+                Embarking on vocal lessons opens up a world of expressive
+                possibilities. Structured vocal training provides a solid
+                foundation, allowing you to explore and expand your vocal
+                range. From mastering breath control to honing your unique
+                style, vocal lessons offer personalized guidance for singers
+                of all levels. Whether you aspire to perform on stage, record
+                your music, or simply sing with confidence, these lessons are
+                tailored to enhance your vocal abilities and bring out the
+                full beauty of your voice.
+              </p>
+              <a href="#"><button style="background-color: red;" onclick="openPopup()">Enroll Now</button></a>
+            </div>
+          </div>
+        </div>
+
+        <!--**box5*******************-->
+        <div class="course-box">
+          <!--img-->
+          <div class="course-img">
+            <img src="images/violinplayer.jpg" alt="" />
+          </div>
+          <!--text-->
+          <div class="course-text">
+            <!--category-->
+            <span class="category">Violin</span>
+            <!--title-->
+            <h4>Embrace the elegance of the violin with expert-led lessons</h4>
+            <!--small-paragraph-->
+            <p>
+              Violin lessons: where classical beauty meets contemporary
+              expression. Learn to draw the bow across the strings and create
+              enchanting melodies. Whether you're a beginner or advancing
+              violinist, these lessons offer a structured path to mastering
+              this timeless instrument. From understanding musical notation
+              to perfecting your technique, your journey to violin mastery
+              begins here. Let the music resonate and the violin sing in
+              your hands!
+            </p>
+            <button>
+              <label for="popup5" style="color: black;">Learn more</label>
+            </button>
+            <!--lessons-&-time-->
+            <div class="lesson-time">
+              <span class="lesson"
+                ><i class="fa-solid fa-layer-group"></i> 10 Lessons</span
+              >
+              <span class="time"
+                ><i class="fa-solid fa-clock"></i> 2 hr</span
+              >
+            </div>
+          </div>
+          <input type="checkbox" class="popup-btn" id="popup5" />
+          <!--popup-->
+          <div class="popup-bg"></div>
+          <div class="course-popup">
+            <!--close-->
+            <label for="popup5" class="p-close"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+            <div class="popup-content">
+              <!--demo-video-->
+              <span>Course Demo</span>
+              <video controls>
+                <source
+                  src="images/How To Play The Violin.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <strong>Violin lessons</strong>
+              <p>
+                Unlock the expressive potential of the violin through
+                expert-led lessons. Whether you're a beginner or an
+                intermediate player, these lessons provide a systematic
+                approach to violin mastery. From learning essential
+                techniques to interpreting classical and contemporary
+                compositions, you'll embark on a musical journey that
+                enhances your skills and deepens your appreciation for
+                this versatile instrument. Join us and let the violin
+                become your voice in the world of music.
+              </p>
+              <a href="#"><button style="background-color: red;" onclick="openPopup()">Enroll Now</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </section>
+    <footer>
+      <div class="footer-container">
+        <!--heading----------------->
+        <div class="footer-heading">
+          <h4>Striking the Right Chord in Music Education.</h4>
+        </div>
+        <!--footer-content----------------------------->
+        <div class="footer-content">
+          <!--box------------->
+          <div class="footer-box">
+            <strong>explore</strong>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactform.html">Contact</a></li>
+            </ul>
+          </div>
+          <!--box------------->
+          <div class="footer-box">
+            <strong>Social</strong>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/aureusacademy/?hl=en"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/academymusic?lang=en">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/rockschoolsingapore/"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--box------------->
+          <div class="footer-box">
+            <strong>Contact</strong>
+            <ul>
+              <li><a href="contactform.html">monimusicschool@gmail.com</a></li>
+              <li><a href="#">+123456789</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

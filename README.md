@@ -21,6 +21,7 @@ This is my assignment 1
 
 - JQuery
 - Light slider
+- ChatGpt
 
 **Testing**
 Testimonial form
@@ -30,7 +31,28 @@ Testimonial form
 - After submitting, a success message appears indicating that the form has beeen successfully submitted
 - The user's testimonial will then be displayed on the testimonial page.
 
+Navigation Bar
+
+- Click on every navigation including the logo to see if they all redirect you to another page
+- Minimize screen to see if the navbar is responsive and changes to fit mobile view
+
 Contact form
+
+- Go to Contact page
+- Try to submit the contact form without filling in the fields.
+- If you have successfully submitted the form, you will be redirected to another page.
+
+Testimonial Form
+
+- Click on leave a review that is located on the home page
+- Fill in the fields
+- Once submitted, the data you have inputed will be displayed on the testimonials page.
+
+Book Online Button
+
+- Try to input an email without the @.
+- Try to submit the empty form and verify that an error message about the required fields appears
+- Try to submit the form with all inputs valid and verify you get redirected to the testimonials page.
 
 **Media**
 The photos from this site were obtained from:
@@ -41,7 +63,7 @@ The photos from this site were obtained from:
 
 - https://www.istockphoto.com/photo/happy-millennial-business-group-leader-giving-hand-for-shake-gm1318531385-405639325 (about us.jpg)
 
-- https://www.flaticon.com/free-icon/grand-piano_1994592 (piano icon slider)
+- https://www.flaticon.com/free-icon/grand-piano_1994592 (pino.png)
 
 - https://www.flaticon.com/free-icon/drum-set_4488230 (drums.png)
 
@@ -60,3 +82,25 @@ The photos from this site were obtained from:
 - https://www.fuelrocks.com/unleashing-energy-mastering-the-art-of-playing-live-wire-on-the-drums/ (record-e-drums-960x600-1.jpg)
 
 - https://www.newyorker.com/culture/cultural-comment/the-rise-and-fall-of-smooth-jazz (musicbg.jpeg)
+
+- https://ssmo.org/vcs/schools/music/ (boyguitar.jpg)
+
+- https://wall.alphacoders.com/big.php?i=62676 (wp2776811.jpg)
+
+- http://unlimited-addons.com/testimonials-addons-for-wpbakery-page-bulder/ (test2.jpeg)
+
+- https://unlimited-elements.com/testimonial-carousel-widget-for-elementor/ (test1.jpeg)
+
+- https://www.songkick.com/concerts/41394711-kalandra-at-kasarna-karlin (hqdefault.jpg)
+
+- https://www.applausepianostudio.com/ (people-2577951_1280.jpg)
+
+- mmswhite.png (original)
+
+- https://www.youtube.com/watch?v=BBz-Jyr23M4&list=PL-RYb_OMw7GfqsbipaR65GDDzA1rP5deq (guitar video course demo)
+
+- https://www.youtube.com/watch?v=827jmswqnEA (piano video course demo)
+
+- https://www.youtube.com/watch?v=et9hU7QMDYU (drums video course demo)
+
+- https://www.youtube.com/watch?v=jog-nfLldRI (vocal video course demo)
