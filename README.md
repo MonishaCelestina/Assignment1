@@ -3,25 +3,37 @@
 This is my assignment 1
 
 ----Design Process----
+
+Website idea: Music school
+
+External user's goal: Site users of any age who are interested in taking lessons on an instrument offered on the website. Users can book music teachers through the website.
+
+Site owners's goal: To attract prospective students, provide information about music programs and classes
+
+I have designed the logo which is the mmswhite.png in the images folder.
+
+- I want to make this website well-designed as well as functional. Moreover, it should be easy for users to navigate the website and all pages should be compatible in mobile view
+
 **Existing Features**
 
-- Simple Navigation Bar
-- Footer containing social media links as well as contact information
-- About us section
+- Simple Navigation Bar (For users to navigate through different sections of the website)
+- Footer containing social media links as well as contact information (For users to be directed to the contact form or the website's social media pages)
+- About us section (For users to find out more about the school)
 - Home Page
-- Book online feature for users to book lessons online
-- Lessons page. Users can browse what kind of lessons the music school provides
-- Contact form
-- Slideshow of featured students on homepage
+- Book online feature for users to book lessons online (For users to book a lesosn by filling out the booking form)
+- Lessons page. (Users can browse what kind of lessons the music school provides )
+- Contact form (Users that have enquires about the page can fill out the contact form. If submitted successfully they will be redirected to a page)
+- Slideshow of featured students on homepage (Showcases students which could attract users to book lessons)
   **Additional Features**
 - Students that want to post their own testimonials can do so by filling out a testimonial form which will then be displayed on the testimonials page
 - Users that are browsing what lessons are available on the lessons offered page will be able to watch a course demo on the respective lesson they click on
+- lesson slider on homepage for users to view lessons
 
 **Technologies Used**
 
-- JQuery
-- Light slider
-- ChatGpt
+- JQuery. The project uses JQuery to simplify DOM manipulation.
+- Light slider. This project uses light slider to customize image sliders.
+- ChatGpt. This project uses chatgpt to generate brief information for my website such as instrument information.
 
 **Testing**
 Testimonial form
@@ -30,6 +42,7 @@ Testimonial form
 - After filling up the form click on submit.
 - After submitting, a success message appears indicating that the form has beeen successfully submitted
 - The user's testimonial will then be displayed on the testimonial page.
+  (- Faced the issue of the data not being displayed on the testimonials page)
 
 Navigation Bar
 
@@ -41,6 +54,10 @@ Contact form
 - Go to Contact page
 - Try to submit the contact form without filling in the fields.
 - If you have successfully submitted the form, you will be redirected to another page.
+- Minimize screen to see if it fits mobile view
+  (there was a problem at first when i clicked book online as the popup appeared behind the contact form.
+  This was solved by changing the z-index)
+  - This page is designed to be compatible with mobile devices.
 
 Testimonial Form
 
@@ -53,6 +70,39 @@ Book Online Button
 - Try to input an email without the @.
 - Try to submit the empty form and verify that an error message about the required fields appears
 - Try to submit the form with all inputs valid and verify you get redirected to the testimonials page.
+  (Used javascript for this button. I created 2 function OpenPopUp and ClosePopUp for the book online button. So when the user clicks on the button
+  the booking form will popup)
+
+Footer
+
+- Try to see if the social media links redirect you to a social media page
+- Try to see if the explore links redirect you to the respective pages
+
+Lessons Offered page
+
+- Minimize screen to see if it fits mobile view. This page is designed to be compatible with mobile devices.
+
+About Us
+
+- Try to click on book online
+  (there was a problem at first when i clicked book online as the popup appeared behind the about us image.
+  This was solved by changing the z-index)
+  (another error I faced was the about us image wasnt able to center between the black container and about us text container )
+- This page is designed to be compatible with mobile devices.
+
+Home page Unlock potential
+
+- When in mobile view, elements are stacked vertically on top of each other
+
+- Automatic Slideshow
+  (had an error of the student names being cut off. This was solved by changing the the margin-bottom)
+
+**Additional Errors faced**
+
+- when put into the assests folder, despite linking the stylesheet properly, the contactform.css and styles.css wasnt applied to the respective pages. Ended up just moving them out of the
+  asset folder
+
+**_Credits_**
 
 **Media**
 The photos from this site were obtained from:
@@ -104,3 +154,16 @@ The photos from this site were obtained from:
 - https://www.youtube.com/watch?v=et9hU7QMDYU (drums video course demo)
 
 - https://www.youtube.com/watch?v=jog-nfLldRI (vocal video course demo)
+
+**Acknowledgements**
+
+- The text from the about us, lessonsoffered and homepage section was copied from ChatGpt
+- I learnt how to make the automatic slideshow from w3wschools.com
+  **Inspirations**
+
+I received inspiration from this project from sites such as Ossia music school (https://www.ossia.edu.sg/) as well as Aureus Academy (https://www.aureusacademy.com/)
+
+**Reflection**
+
+This site was definitely pretty fun to make although I ran through some errors that took many hours to fix. Learnt a few shortcuts as well through this process as well.
+For example if i typed in (li\*5) it will create 5 list items which is more efficient.
